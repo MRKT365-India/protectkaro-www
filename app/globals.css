@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root {
+  --brand: #22c55e;
+  --navy: #0f172a;
+  --navy-light: #1e293b;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; }
