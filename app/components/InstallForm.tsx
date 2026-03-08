@@ -12,25 +12,45 @@ export function InstallForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-      <div className="flex gap-2 bg-navy-light border border-navy-border rounded-xl p-1.5">
+    <form onSubmit={handleSubmit} style={{ maxWidth: 480, margin: "0 auto" }}>
+      <div style={{ display: "flex", gap: 8, background: "#1e293b", border: "1px solid #334155", borderRadius: 12, padding: 6 }}>
         <input
           type="text"
           value={shop}
           onChange={(e) => setShop(e.target.value)}
           placeholder="yourstore.myshopify.com"
-          className="flex-1 bg-transparent border-none outline-none text-slate-100 text-sm px-3 py-2 placeholder:text-slate-500"
+          style={{
+            flex: 1,
+            background: "transparent",
+            border: "none",
+            outline: "none",
+            color: "#f8fafc",
+            fontSize: 15,
+            padding: "10px 14px",
+          }}
           autoComplete="off"
           spellCheck={false}
         />
         <button
           type="submit"
-          className="bg-brand text-black font-bold text-sm px-5 py-2 rounded-lg hover:opacity-90 transition-opacity whitespace-nowrap cursor-pointer border-none"
+          style={{
+            background: "#22c55e",
+            color: "#000",
+            border: "none",
+            borderRadius: 8,
+            padding: "10px 20px",
+            fontWeight: 700,
+            fontSize: 15,
+            cursor: "pointer",
+            whiteSpace: "nowrap",
+          }}
         >
           Install Free →
         </button>
       </div>
-      <p className="text-xs text-slate-500 mt-3 text-center">No credit card required. Free forever.</p>
+      <p style={{ fontSize: 13, color: "#64748b", marginTop: 12, textAlign: "center" }}>
+        No credit card required. Free forever.
+      </p>
     </form>
   );
 }
