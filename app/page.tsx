@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Nav } from "./components/Nav";
 import { Footer } from "./components/Footer";
 import { InstallForm } from "./components/InstallForm";
@@ -38,6 +39,7 @@ export default function Home() {
 
       {/* Hero */}
       <section style={{ maxWidth: 760, margin: "0 auto", padding: "96px 24px 72px", textAlign: "center" }}>
+        <Image src="/logo.jpg" alt="ProtectKaro" width={80} height={80} style={{ borderRadius: 20, marginBottom: 24 }} />
         <div style={{ display: "inline-block", background: "rgba(34,197,94,0.12)", color: "#22c55e", border: "1px solid rgba(34,197,94,0.3)", padding: "4px 16px", borderRadius: 20, fontSize: 13, fontWeight: 600, marginBottom: 24, letterSpacing: "0.04em", textTransform: "uppercase" }}>
           Built for India's DPDP Act 2023
         </div>
