@@ -2,41 +2,27 @@ import type { Metadata } from "next";
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
 
-export const metadata: Metadata = {
-  title: "Pricing",
-  description: "ProtectKaro is free for all Shopify merchants. No credit card required.",
-};
+export const metadata: Metadata = { title: "Pricing", description: "ProtectKaro is free for all Shopify merchants. No credit card required." };
 
 export default function Pricing() {
   return (
     <>
       <Nav />
-      <section className="max-w-3xl mx-auto px-6 py-24 text-center">
-        <h1 className="text-4xl font-extrabold tracking-tight mb-4">Simple, honest pricing</h1>
-        <p className="text-slate-400 mb-16 text-lg">No tiers, no surprises. ProtectKaro is free.</p>
-        <div className="bg-navy-light border-2 border-brand rounded-2xl p-10 max-w-sm mx-auto">
-          <div className="text-brand text-sm font-bold uppercase tracking-wider mb-4">Free Forever</div>
-          <div className="text-6xl font-extrabold mb-2">₹0</div>
-          <p className="text-slate-400 text-sm mb-8">per month</p>
-          <ul className="text-sm text-slate-300 space-y-3 text-left mb-8">
-            {[
-              "Unlimited consent events",
-              "Full audit log history",
-              "DPDP-compliant consent banner",
-              "Dashboard analytics",
-              "GDPR webhook support",
-              "Email support",
-            ].map((f) => (
-              <li key={f} className="flex items-center gap-2">
-                <span className="text-brand">✓</span> {f}
+      <section style={{ maxWidth: 800, margin: "0 auto", padding: "80px 24px", textAlign: "center" }}>
+        <h1 style={{ fontSize: 40, fontWeight: 800, margin: "0 0 16px", letterSpacing: "-0.02em" }}>Simple, honest pricing</h1>
+        <p style={{ fontSize: 18, color: "#94a3b8", marginBottom: 60 }}>No tiers, no surprises. ProtectKaro is free.</p>
+        <div style={{ background: "#1e293b", border: "2px solid #22c55e", borderRadius: 20, padding: "48px 40px", maxWidth: 360, margin: "0 auto" }}>
+          <div style={{ color: "#22c55e", fontSize: 12, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", marginBottom: 16 }}>Free Forever</div>
+          <div style={{ fontSize: 64, fontWeight: 800, marginBottom: 4 }}>₹0</div>
+          <p style={{ color: "#64748b", fontSize: 14, marginBottom: 32 }}>per month</p>
+          <ul style={{ textAlign: "left", marginBottom: 32, display: "flex", flexDirection: "column", gap: 12 }}>
+            {["Unlimited consent events", "Full audit log history", "DPDP-compliant consent banner", "Dashboard analytics", "GDPR webhook support", "Email support"].map((f) => (
+              <li key={f} style={{ fontSize: 14, color: "#cbd5e1", display: "flex", alignItems: "center", gap: 10 }}>
+                <span style={{ color: "#22c55e", fontWeight: 700 }}>✓</span> {f}
               </li>
             ))}
           </ul>
-          <a
-            href="https://apps.shopify.com/protectkaro"
-            className="block bg-brand text-black font-bold py-3 rounded-lg no-underline text-center hover:opacity-90 transition-opacity"
-            rel="noopener noreferrer"
-          >
+          <a href="https://apps.shopify.com/protectkaro" style={{ display: "block", background: "#22c55e", color: "#000", fontWeight: 700, padding: "14px", borderRadius: 10, textAlign: "center" }} rel="noopener noreferrer">
             Install Free on Shopify
           </a>
         </div>

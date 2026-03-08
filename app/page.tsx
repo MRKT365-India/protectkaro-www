@@ -5,8 +5,7 @@ import { InstallForm } from "./components/InstallForm";
 
 export const metadata: Metadata = {
   title: "ProtectKaro — DPDP Compliance for Shopify Stores",
-  description:
-    "Collect consent, build tamper-proof audit trails, and stay compliant with India's Digital Personal Data Protection Act 2023. Free for Shopify merchants.",
+  description: "Collect consent, build tamper-proof audit trails, and stay compliant with India's Digital Personal Data Protection Act 2023. Free for Shopify merchants.",
 };
 
 const FEATURES = [
@@ -25,11 +24,11 @@ const STEPS = [
 ];
 
 const FAQS = [
-  { q: "What is the DPDP Act?", a: "India's Digital Personal Data Protection Act 2023 (DPDP Act) requires businesses to obtain explicit consent from users before collecting and processing their personal data. Shopify merchants selling to Indian customers must comply." },
-  { q: "Is ProtectKaro really free?", a: "Yes. ProtectKaro is free for all Shopify merchants with no usage limits. We may introduce paid plans for advanced features in future — existing users will always have a free tier." },
+  { q: "What is the DPDP Act?", a: "India's Digital Personal Data Protection Act 2023 requires businesses to obtain explicit consent before collecting personal data. Shopify merchants selling to Indian customers must comply." },
+  { q: "Is ProtectKaro really free?", a: "Yes. Free for all Shopify merchants with no usage limits. We may introduce paid plans for advanced features — existing users always keep a free tier." },
   { q: "Does it work with any Shopify theme?", a: "Yes. ProtectKaro uses Shopify's App Embed system, which works with any Online Store 2.0 theme including Dawn, Debut, and custom themes." },
-  { q: "What data does ProtectKaro store?", a: "Only anonymous consent records: a randomly generated visitor ID, the consent action (accept/reject), and a hashed timestamp. No names, emails, or Shopify customer records are ever stored." },
-  { q: "Does it work for GDPR too?", a: "Yes. The consent model is compatible with GDPR requirements. ProtectKaro is designed to be regulation-agnostic — it captures consent regardless of which regulation applies." },
+  { q: "What data does ProtectKaro store?", a: "Only anonymous consent records: a randomly generated visitor ID, consent action (accept/reject), and hashed timestamp. No names, emails, or Shopify customer records." },
+  { q: "Does it work for GDPR too?", a: "Yes. The consent model is compatible with GDPR. ProtectKaro is regulation-agnostic — it captures consent regardless of which regulation applies." },
 ];
 
 export default function Home() {
@@ -38,74 +37,72 @@ export default function Home() {
       <Nav />
 
       {/* Hero */}
-      <section className="max-w-3xl mx-auto px-6 py-24 text-center">
-        <div className="inline-block bg-green-950 text-brand border border-green-800 text-xs font-semibold px-4 py-1.5 rounded-full mb-6 tracking-wide uppercase">
+      <section style={{ maxWidth: 760, margin: "0 auto", padding: "96px 24px 72px", textAlign: "center" }}>
+        <div style={{ display: "inline-block", background: "rgba(34,197,94,0.12)", color: "#22c55e", border: "1px solid rgba(34,197,94,0.3)", padding: "4px 16px", borderRadius: 20, fontSize: 13, fontWeight: 600, marginBottom: 24, letterSpacing: "0.04em", textTransform: "uppercase" }}>
           Built for India's DPDP Act 2023
         </div>
-        <h1 className="text-5xl font-extrabold leading-tight tracking-tighter mb-5">
-          DPDP Compliance for<br className="hidden sm:block" /> Your Shopify Store
+        <h1 style={{ fontSize: "clamp(32px,5vw,52px)", fontWeight: 800, lineHeight: 1.1, margin: "0 0 20px", letterSpacing: "-0.03em" }}>
+          DPDP Compliance for<br />Your Shopify Store
         </h1>
-        <p className="text-lg text-slate-400 leading-relaxed mb-10 max-w-xl mx-auto">
+        <p style={{ fontSize: 18, color: "#94a3b8", lineHeight: 1.7, margin: "0 auto 40px", maxWidth: 520 }}>
           Collect consent, log every decision, and stay audit-ready under India's Digital Personal Data Protection Act — free, in under 5 minutes.
         </p>
         <InstallForm />
       </section>
 
-      {/* Social proof strip */}
-      <div className="border-y border-navy-border py-5 text-center text-sm text-slate-500">
+      {/* Trust strip */}
+      <div style={{ borderTop: "1px solid #1e293b", borderBottom: "1px solid #1e293b", padding: "16px 24px", textAlign: "center", fontSize: 13, color: "#64748b" }}>
         Trusted by Shopify merchants in India &nbsp;·&nbsp; DPDP Act 2023 compliant &nbsp;·&nbsp; Free forever
       </div>
 
       {/* Features */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="text-3xl font-extrabold tracking-tight text-center mb-12">Everything you need to stay compliant</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <section style={{ maxWidth: 1100, margin: "0 auto", padding: "80px 24px" }}>
+        <h2 style={{ fontSize: 32, fontWeight: 800, textAlign: "center", marginBottom: 48, letterSpacing: "-0.02em" }}>Everything you need to stay compliant</h2>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 20 }}>
           {FEATURES.map((f) => (
-            <div key={f.title} className="bg-navy-light border border-navy-border rounded-2xl p-6 hover:border-slate-500 transition-colors">
-              <span className="text-2xl block mb-3">{f.icon}</span>
-              <h3 className="font-bold text-base mb-2">{f.title}</h3>
-              <p className="text-sm text-slate-400 leading-relaxed">{f.desc}</p>
+            <div key={f.title} style={{ background: "#1e293b", border: "1px solid #334155", borderRadius: 16, padding: "28px 24px" }}>
+              <span style={{ fontSize: 28, display: "block", marginBottom: 12 }}>{f.icon}</span>
+              <h3 style={{ fontSize: 16, fontWeight: 700, margin: "0 0 8px" }}>{f.title}</h3>
+              <p style={{ fontSize: 14, color: "#94a3b8", lineHeight: 1.6, margin: 0 }}>{f.desc}</p>
             </div>
           ))}
         </div>
       </section>
 
-      {/* How it works */}
-      <section className="bg-navy-light py-20 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-extrabold tracking-tight mb-12">Up and running in 3 steps</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-            {STEPS.map((s) => (
-              <div key={s.n} className="text-center">
-                <div className="w-10 h-10 bg-brand text-black rounded-full flex items-center justify-center font-extrabold text-lg mx-auto mb-4">{s.n}</div>
-                <h3 className="font-bold text-base mb-2">{s.title}</h3>
-                <p className="text-sm text-slate-400 leading-relaxed">{s.desc}</p>
-              </div>
-            ))}
-          </div>
+      {/* Steps */}
+      <section style={{ background: "#1e293b", padding: "80px 24px", textAlign: "center" }}>
+        <h2 style={{ fontSize: 32, fontWeight: 800, marginBottom: 48, letterSpacing: "-0.02em" }}>Up and running in 3 steps</h2>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 32, maxWidth: 900, margin: "0 auto" }}>
+          {STEPS.map((s) => (
+            <div key={s.n} style={{ textAlign: "center" }}>
+              <div style={{ width: 44, height: 44, background: "#22c55e", color: "#000", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center", fontWeight: 800, fontSize: 18, margin: "0 auto 16px" }}>{s.n}</div>
+              <h3 style={{ fontSize: 16, fontWeight: 700, margin: "0 0 8px" }}>{s.title}</h3>
+              <p style={{ fontSize: 14, color: "#94a3b8", lineHeight: 1.6, margin: 0 }}>{s.desc}</p>
+            </div>
+          ))}
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="max-w-3xl mx-auto px-6 py-20">
-        <h2 className="text-3xl font-extrabold tracking-tight text-center mb-12">Frequently asked questions</h2>
-        <div className="space-y-4">
+      <section style={{ maxWidth: 760, margin: "0 auto", padding: "80px 24px" }}>
+        <h2 style={{ fontSize: 32, fontWeight: 800, textAlign: "center", marginBottom: 48, letterSpacing: "-0.02em" }}>Frequently asked questions</h2>
+        <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
           {FAQS.map((faq) => (
-            <div key={faq.q} className="bg-navy-light border border-navy-border rounded-xl p-6">
-              <h3 className="font-bold text-base mb-2">{faq.q}</h3>
-              <p className="text-sm text-slate-400 leading-relaxed">{faq.a}</p>
+            <div key={faq.q} style={{ background: "#1e293b", border: "1px solid #334155", borderRadius: 12, padding: "20px 24px" }}>
+              <h3 style={{ fontSize: 15, fontWeight: 700, margin: "0 0 8px" }}>{faq.q}</h3>
+              <p style={{ fontSize: 14, color: "#94a3b8", lineHeight: 1.6, margin: 0 }}>{faq.a}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* CTA */}
-      <section className="max-w-2xl mx-auto px-6 py-20 text-center">
-        <h2 className="text-4xl font-extrabold tracking-tight mb-4">Start collecting consent today</h2>
-        <p className="text-slate-400 mb-8">Free for all Shopify merchants. No limits, no credit card.</p>
+      <section style={{ maxWidth: 600, margin: "0 auto", padding: "80px 24px 100px", textAlign: "center" }}>
+        <h2 style={{ fontSize: 36, fontWeight: 800, margin: "0 0 16px", letterSpacing: "-0.02em" }}>Start collecting consent today</h2>
+        <p style={{ fontSize: 16, color: "#94a3b8", margin: "0 0 32px" }}>Free for all Shopify merchants. No limits, no credit card.</p>
         <a
           href="https://apps.shopify.com/protectkaro"
-          className="inline-block bg-brand text-black font-bold text-base px-8 py-4 rounded-xl no-underline hover:opacity-90 transition-opacity"
+          style={{ display: "inline-block", background: "#22c55e", color: "#000", fontWeight: 700, fontSize: 16, padding: "14px 32px", borderRadius: 12 }}
           rel="noopener noreferrer"
         >
           Install on Shopify — It's Free
