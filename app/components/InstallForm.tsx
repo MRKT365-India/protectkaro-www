@@ -12,45 +12,20 @@ export function InstallForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} style={{ maxWidth: 480, margin: "0 auto" }}>
-      <div style={{ display: "flex", gap: 8, background: "#1e293b", border: "1px solid #334155", borderRadius: 12, padding: 6 }}>
+    <form onSubmit={handleSubmit} className="install-form">
+      <div className="install-row">
         <input
           type="text"
           value={shop}
           onChange={(e) => setShop(e.target.value)}
           placeholder="yourstore.myshopify.com"
-          style={{
-            flex: 1,
-            background: "transparent",
-            border: "none",
-            outline: "none",
-            color: "#f8fafc",
-            fontSize: 15,
-            padding: "10px 14px",
-          }}
+          className="install-input"
           autoComplete="off"
           spellCheck={false}
         />
-        <button
-          type="submit"
-          style={{
-            background: "#22c55e",
-            color: "#000",
-            border: "none",
-            borderRadius: 8,
-            padding: "10px 20px",
-            fontWeight: 700,
-            fontSize: 15,
-            cursor: "pointer",
-            whiteSpace: "nowrap",
-          }}
-        >
-          Install Free →
-        </button>
+        <button type="submit" className="install-btn">Install Free →</button>
       </div>
-      <p style={{ fontSize: 13, color: "#64748b", marginTop: 12, textAlign: "center" }}>
-        No credit card required. Free forever.
-      </p>
+      <p className="install-hint">No credit card required · Free forever</p>
     </form>
   );
 }
