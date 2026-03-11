@@ -9,7 +9,7 @@ export function Footer() {
       <span className="footer-dot">·</span>
       <Link href="/terms">Terms</Link>
       <span className="footer-dot">·</span>
-      <a href="mailto:kashif@mrkt365.co.in">Support</a>
+      <Link href="/support">Support</Link>
     </footer>
   );
 }
