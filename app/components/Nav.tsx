@@ -12,9 +12,10 @@ export function Nav() {
         <div className="nav-links">
           <Link href="/features">Features</Link>
           <Link href="/pricing">Pricing</Link>
+          <Link href="/blog">Blog</Link>
           <Link href="/how-it-works">How it works</Link>
           <a href="https://apps.shopify.com/protectkaro" className="nav-cta" rel="noopener noreferrer">
-            Install Free
+            Install on Shopify
           </a>
         </div>
       </div>

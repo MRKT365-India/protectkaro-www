@@ -1,35 +1,72 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { Nav } from "./components/Nav";
 import { Footer } from "./components/Footer";
 import { InstallForm } from "./components/InstallForm";
 
 export const metadata: Metadata = {
-  title: "ProtectKaro — DPDP Compliance for Shopify Stores",
-  description: "Collect consent, build tamper-proof audit trails, and stay compliant with India's Digital Personal Data Protection Act 2023. Free for Shopify merchants.",
+  title: "Audit-Ready DPDP Compliance for Shopify",
+  description:
+    "ProtectKaro helps Shopify stores in India capture consent, monitor Protection Status, and keep audit-ready consent records — not just show a banner.",
 };
 
 const FEATURES = [
-  { icon: "📋", title: "DPDP Consent Banner", desc: "Show a legally compliant consent banner to every storefront visitor. Customisable design — no code required." },
-  { icon: "🔍", title: "Tamper-Proof Audit Log", desc: "Every consent decision is timestamped and stored immutably. Export your audit trail any time for regulatory review." },
-  { icon: "🔒", title: "Privacy by Design", desc: "No PII is ever stored. Visitor IDs are anonymous. Only SHA-256 hashed IPs — DPDP compliant from day one." },
-  { icon: "⚡", title: "5-Minute Setup", desc: "Install from Shopify, enable the App Embed in your theme, done. No developer or code changes needed." },
-  { icon: "📊", title: "Live Dashboard", desc: "See consent stats in real time from your Shopify admin. Track acceptance rates and consent trends." },
-  { icon: "🇮🇳", title: "Built for India", desc: "Specifically designed for Indian merchants operating under the DPDP Act 2023. GDPR-compatible too." },
+  {
+    icon: "🛡️",
+    title: "Protection Status inside Shopify",
+    desc: "Merchants can verify whether the banner is live and connected from the app dashboard instead of guessing from the storefront.",
+  },
+  {
+    icon: "🧾",
+    title: "Consent records you can review",
+    desc: "Every consent action is logged with timestamps and identifiers so stores can review what happened instead of relying on screenshots.",
+  },
+  {
+    icon: "📤",
+    title: "Export-ready proof on Pro",
+    desc: "Free covers recent records. Pro unlocks longer history and CSV export for agencies, audits, and compliance reporting.",
+  },
+  {
+    icon: "⚡",
+    title: "5-minute Shopify setup",
+    desc: "Install the app, enable the App Embed, and confirm status from the dashboard — no code changes required.",
+  },
+  {
+    icon: "🔒",
+    title: "Privacy-first handling",
+    desc: "ProtectKaro stores hashed and audit-friendly consent data instead of names, emails, or raw customer records.",
+  },
+  {
+    icon: "🇮🇳",
+    title: "Built for India, ready for review",
+    desc: "Designed around the operational reality of DPDP for Indian Shopify merchants and the expectations of reviewers and partners.",
+  },
 ];
 
 const STEPS = [
-  { n: 1, title: "Install from Shopify App Store", desc: "One click, OAuth handled automatically. You're in the dashboard in seconds." },
-  { n: 2, title: "Enable the consent banner", desc: "Online Store → Themes → App Embeds → toggle ProtectKaro on. Save. That's it." },
-  { n: 3, title: "Stay audit-ready", desc: "Every consent decision is logged. View your audit trail from the ProtectKaro dashboard in Shopify admin." },
+  { n: 1, title: "Install the app", desc: "Start from the Shopify App Store and land in ProtectKaro inside your Shopify admin." },
+  { n: 2, title: "Enable the banner", desc: "Turn on the ProtectKaro App Embed in Theme Editor and confirm the Protection Status updates." },
+  { n: 3, title: "Keep records review-ready", desc: "Track recent consent records on Free and unlock deeper history and CSV export on Pro." },
 ];
 
 const FAQS = [
-  { q: "What is the DPDP Act?", a: "India's Digital Personal Data Protection Act 2023 requires businesses to obtain explicit consent before collecting personal data. Shopify merchants selling to Indian customers must comply." },
-  { q: "Is ProtectKaro really free?", a: "Yes. Free for all Shopify merchants with no usage limits. We may introduce paid plans for advanced features — existing users always keep a free tier." },
-  { q: "Does it work with any Shopify theme?", a: "Yes. ProtectKaro uses Shopify's App Embed system, which works with any Online Store 2.0 theme including Dawn, Debut, and custom themes." },
-  { q: "What data does ProtectKaro store?", a: "Only anonymous consent records: a randomly generated visitor ID, consent action (accept/reject), and hashed timestamp. No names, emails, or Shopify customer records." },
-  { q: "Does it work for GDPR too?", a: "Yes. The consent model is compatible with GDPR. ProtectKaro is regulation-agnostic — it captures consent regardless of which regulation applies." },
+  {
+    q: "Is ProtectKaro just a consent banner?",
+    a: "No. The banner is only the collection layer. ProtectKaro is built around consent records, Protection Status, and audit-ready proof inside Shopify.",
+  },
+  {
+    q: "What does the Free plan include?",
+    a: "Free includes the DPDP banner, consent logging, dashboard visibility, and a 90-day audit log window. Pro adds 1-year history, CSV export, and more advanced proof features.",
+  },
+  {
+    q: "Who should upgrade to Pro?",
+    a: "Stores that need longer record history, exportable logs, or agency/compliance reporting should use Pro.",
+  },
+  {
+    q: "Can agencies use ProtectKaro for client stores?",
+    a: "Yes. ProtectKaro is especially useful when an agency needs clearer proof of consent operations rather than just a storefront banner screenshot.",
+  },
 ];
 
 export default function Home() {
@@ -37,33 +74,66 @@ export default function Home() {
     <>
       <Nav />
 
-      {/* Hero */}
       <section className="hero">
         <div className="hero-inner">
-          <Image src="/logo.jpg" alt="ProtectKaro" width={80} height={80} className="hero-logo" />
+          <Image src="/logo.jpg" alt="ProtectKaro logo" width={80} height={80} className="hero-logo" />
           <div className="hero-badge">
             <span className="hero-badge-dot" />
-            Built for India's DPDP Act 2023
+            Audit-ready DPDP infrastructure for Shopify
           </div>
           <h1 className="hero-title">
-            DPDP Compliance for<br />
-            <span>Your Shopify Store</span>
+            Go beyond a banner.<br />
+            <span>Keep DPDP consent records ready.</span>
           </h1>
           <p className="hero-sub">
-            Collect consent, log every decision, and stay audit-ready under India's Digital Personal Data Protection Act — free, in under 5 minutes.
+            ProtectKaro helps Shopify stores in India capture consent, verify Protection Status, and keep review-ready consent records from one dashboard.
           </p>
           <InstallForm />
+          <div className="hero-secondary-links">
+            <Link href="/pricing" className="text-link">See pricing</Link>
+            <Link href="/blog" className="text-link">Read DPDP guides</Link>
+          </div>
         </div>
       </section>
 
-      {/* Trust strip */}
       <div className="trust-strip">
-        Trusted by Shopify merchants in India &nbsp;·&nbsp; DPDP Act 2023 compliant &nbsp;·&nbsp; Free forever
+        Shopify-first workflow · Free plan includes 90-day consent log visibility · Pro unlocks 1-year history + CSV export
       </div>
 
-      {/* Features */}
+      <section className="section proof-section">
+        <div className="proof-copy">
+          <div className="page-badge">Why it matters</div>
+          <h2 className="section-title left">Compliance proof should survive after the demo</h2>
+          <p className="proof-text">
+            ProtectKaro is built for merchants who need more than a nice-looking banner. The real asset is an operational record: what was captured, when it was captured, and whether the banner is actually live on the store.
+          </p>
+          <ul className="proof-list">
+            <li>Protection Status shows whether setup is actually complete</li>
+            <li>Consent Audit Log gives merchants a reviewable record trail</li>
+            <li>Pro unlocks deeper history and CSV export for agency/audit workflows</li>
+          </ul>
+        </div>
+        <div className="proof-panel">
+          <div className="proof-mock">
+            <div className="proof-pill success">Protection Status: Connected</div>
+            <div className="proof-metric">
+              <span>Total consent events</span>
+              <strong>1,284</strong>
+            </div>
+            <div className="proof-metric">
+              <span>Plan</span>
+              <strong>Free / Pro</strong>
+            </div>
+            <div className="proof-metric">
+              <span>Audit log visibility</span>
+              <strong>90 days / 1 year</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div className="section">
-        <h2 className="section-title">Everything you need to stay compliant</h2>
+        <h2 className="section-title">What merchants actually get</h2>
         <div className="feature-grid">
           {FEATURES.map((f) => (
             <div key={f.title} className="feature-card">
@@ -75,7 +145,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Steps */}
       <div className="section-dark">
         <h2 className="section-title">Up and running in 3 steps</h2>
         <div className="steps-inner">
@@ -91,7 +160,30 @@ export default function Home() {
         </div>
       </div>
 
-      {/* FAQ */}
+      <section className="section content-strip">
+        <div className="content-strip-header">
+          <div>
+            <div className="page-badge">DPDP content engine</div>
+            <h2 className="section-title left">Learn the operational side of DPDP</h2>
+          </div>
+          <Link href="/blog" className="text-link">View all articles →</Link>
+        </div>
+        <div className="mini-grid">
+          <Link href="/blog/what-is-dpdp-for-shopify-stores-in-india" className="mini-card">
+            <strong>What is the DPDP Act for Shopify stores in India?</strong>
+            <span>Understand what merchants actually need to prove.</span>
+          </Link>
+          <Link href="/blog/dpdp-compliance-checklist-for-shopify-merchants" className="mini-card">
+            <strong>DPDP compliance checklist for Shopify merchants</strong>
+            <span>Use a practical checklist instead of vague compliance claims.</span>
+          </Link>
+          <Link href="/blog/why-cookie-banners-are-not-enough-for-dpdp" className="mini-card">
+            <strong>Why cookie banners are not enough for DPDP</strong>
+            <span>See why proof strength matters more than banner cosmetics.</span>
+          </Link>
+        </div>
+      </section>
+
       <div className="section">
         <h2 className="section-title">Frequently asked questions</h2>
         <div className="faq-list">
@@ -104,12 +196,11 @@ export default function Home() {
         </div>
       </div>
 
-      {/* CTA */}
       <div className="cta-section">
-        <h2 className="cta-title">Start collecting consent today</h2>
-        <p className="cta-sub">Free for all Shopify merchants. No limits, no credit card.</p>
+        <h2 className="cta-title">Start with Free. Upgrade when you need deeper proof.</h2>
+        <p className="cta-sub">Install ProtectKaro on Shopify and get your DPDP workflow live in minutes.</p>
         <a href="https://apps.shopify.com/protectkaro" className="cta-btn" rel="noopener noreferrer">
-          Install on Shopify — It's Free
+          Install on Shopify
         </a>
       </div>
 
