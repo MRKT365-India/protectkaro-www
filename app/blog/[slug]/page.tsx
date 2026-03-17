@@ -45,7 +45,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
         <div className="article-body">
           {post.body.map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
+            <p key={index} dangerouslySetInnerHTML={{ __html: paragraph }} />
           ))}
         </div>
 

@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description: "See what audit-readiness means operationally for Shopify merchants: live consent capture, status visibility, and reviewable records.",
 };
 
+
+const FAQS = [
+  ["What makes a store audit-ready?", "A visible consent workflow, a way to confirm setup is active, and reviewable records that can be accessed later."],
+  ["Is a banner enough for audit readiness?", "No. A banner is only the collection layer. Audit readiness depends on the visibility and quality of the records behind it."],
+];
+
 export default function AuditReadinessPage() {
   return (
     <>
@@ -30,6 +36,16 @@ export default function AuditReadinessPage() {
           <p>When merchants talk about being audit-ready, what they usually want is operational confidence. They want to know the workflow is active, visible, and explainable. ProtectKaro supports that with Protection Status, consent log visibility, and a clear Free-to-Pro progression.</p>
           <p>If your current setup only gives you a banner and a screenshot, your proof is weaker than it appears. A stronger setup is one where the merchant can open the app, confirm status, inspect records, and export deeper logs when the business requires it.</p>
           <p>Read next: <Link href="/compare/cookie-banner-vs-audit-ready-consent-records" className="text-link">cookie banner vs audit-ready consent records</Link>.</p>
+        </div>
+      </section>
+      <section className="section" style={{ maxWidth: 880, paddingTop: 0 }}>
+        <div className="faq-list">
+          {FAQS.map(([q, a]) => (
+            <div key={q} className="faq-item">
+              <h3 className="faq-q">{q}</h3>
+              <p className="faq-a">{a}</p>
+            </div>
+          ))}
         </div>
       </section>
       <Footer />

@@ -27,7 +27,8 @@ export const blogPosts: BlogPost[] = [
       "India's Digital Personal Data Protection Act changes the compliance conversation for ecommerce brands. For Shopify merchants, the obvious first step is adding a consent banner. But banners are only the visible layer. The harder question is whether you can prove what consent was captured, when it was captured, and what record survives later review.",
       "That is why ProtectKaro is positioned as audit-ready infrastructure, not just a front-end banner. A merchant needs operational proof: consent logs, timestamps, retention rules, and a workflow that is easy enough to keep running after install. If the only evidence is a screenshot of a banner design, that is weak proof.",
       "For most Shopify stores, the right practical approach is: collect consent before optional tracking runs, store an auditable event trail, keep access to recent records on the free plan, and upgrade when exportable or longer-term evidence is required by agencies, legal teams, or enterprise clients.",
-      "The best next step for merchants is not to ask whether they have a banner. It is to ask whether they can answer an auditor or partner with evidence. That is the gap ProtectKaro is designed to close."
+      "The best next step for merchants is not to ask whether they have a banner. It is to ask whether they can answer an auditor or partner with evidence. That is the gap ProtectKaro is designed to close.",
+      `Next steps for merchants: review <a href="/shopify-dpdp-compliance">DPDP for Shopify</a>, compare <a href="/compare/cookie-banner-vs-audit-ready-consent-records">banner vs consent-record workflows</a>, and check <a href="/pricing">pricing</a> when deeper proof is needed.`
     ],
     faq: [
       {
@@ -57,7 +58,8 @@ export const blogPosts: BlogPost[] = [
       "Most merchants start with the visible artifact: the banner. But the checklist that matters is operational. Can you confirm the banner is active? Can you verify consent events are reaching the app? Can you review recent records? Can you export or retain records when a partner or regulator asks for them?",
       "A solid DPDP setup for Shopify should include five things: a live storefront consent layer, a working app embed, an internal dashboard to monitor protection status, recent audit log access, and a clear plan for retention and export when deeper reporting is needed.",
       "This is also why pricing clarity matters. Free plans are excellent for getting stores live and proving the workflow. Paid plans should unlock deeper proof: longer history, exports, and agency-ready records. Your website should mirror that truth exactly so merchants know what they are buying.",
-      "If a merchant can install, enable, confirm status, and review the consent log in one short session, you have the start of a credible compliance workflow. From there, the site, product, and documentation should all reinforce the same story."
+      "If a merchant can install, enable, confirm status, and review the consent log in one short session, you have the start of a credible compliance workflow. From there, the site, product, and documentation should all reinforce the same story.",
+      `Useful next pages: <a href="/guides/dpdp-compliance-for-shopify-india">DPDP guide</a>, <a href="/features/protection-status">Protection Status</a>, and <a href="/pricing">Pricing</a>.`
     ],
   },
   {
@@ -75,7 +77,8 @@ export const blogPosts: BlogPost[] = [
       "The market is crowded with compliance tools that over-index on the banner because it is easy to demo. The real compliance moat is the record underneath. When a merchant, agency, or reviewer asks what proof exists, the answer cannot be a design screenshot.",
       "ProtectKaro's differentiation is that the banner is the entry point, not the end product. The real asset is the consent record: a log that shows the action, timing, and history in a way the merchant can inspect and, on the right plan, export. That is much closer to the operational reality of compliance than a cosmetic widget.",
       "This framing matters for SEO as well. Many merchants searching for compliance apps are not really searching for banner design. They are searching for a way to reduce business risk. Website messaging should therefore emphasize audit readiness, consent records, and proof strength before design flexibility.",
-      "If we own that narrative consistently across pages, blog content, and product screens, we will attract better-fit merchants and agencies than a generic consent-banner pitch ever will."
+      "If we own that narrative consistently across pages, blog content, and product screens, we will attract better-fit merchants and agencies than a generic consent-banner pitch ever will.",
+      `For buyers evaluating tools, compare <a href="/best-shopify-consent-management-india">consent management apps in India</a> and see <a href="/features/consent-records">Consent Records</a>.`
     ],
   },
   {

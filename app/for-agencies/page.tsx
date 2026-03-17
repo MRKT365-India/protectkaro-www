@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   description: "ProtectKaro helps agencies give Shopify clients a clearer DPDP compliance workflow with status visibility, consent logs, and stronger proof.",
 };
 
+
+const FAQS = [
+  ["Who is ProtectKaro for on the agency side?", "Agencies managing Shopify stores that want a clearer consent workflow, easier client handoff, and stronger proof than a banner-only setup."],
+  ["Why is Pro useful for agencies?", "Because agencies often need longer history and exportable records for client reporting or compliance reviews."],
+];
+
 export default function ForAgenciesPage() {
   return (
     <>
@@ -30,6 +36,16 @@ export default function ForAgenciesPage() {
           <p>Agencies do not just need install speed. They need a workflow they can hand off confidently. ProtectKaro is designed for that reality: set it up, confirm status, review the log, and upgrade when the client needs stronger reporting.</p>
           <p>That makes the product easier to demo and easier to justify commercially. It also makes agencies look better because they are not selling a cosmetic widget. They are selling a process with proof behind it.</p>
           <p>Related reading: <Link href="/shopify-consent-log" className="text-link">Shopify consent log</Link> and <Link href="/dpdp-audit-readiness" className="text-link">DPDP audit readiness</Link>.</p>
+        </div>
+      </section>
+      <section className="section" style={{ maxWidth: 920, paddingTop: 0 }}>
+        <div className="faq-list">
+          {FAQS.map(([q, a]) => (
+            <div key={q} className="faq-item">
+              <h3 className="faq-q">{q}</h3>
+              <p className="faq-a">{a}</p>
+            </div>
+          ))}
         </div>
       </section>
       <section className="section proof-section" style={{ maxWidth: 980, paddingTop: 0 }}>

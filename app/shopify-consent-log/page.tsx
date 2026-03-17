@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   description: "Learn why a Shopify consent log matters and how ProtectKaro gives merchants a clearer record workflow than banner-only tools.",
 };
 
+
+const FAQS = [
+  ["Why does a Shopify consent log matter?", "Because it gives merchants something reviewable after consent is captured, which is much stronger than relying on the storefront banner alone."],
+  ["Who needs deeper consent-log functionality?", "Agencies, maturing brands, and stores that need longer history or exportable proof will benefit most."],
+];
+
 export default function ShopifyConsentLogPage() {
   return (
     <>
@@ -24,6 +30,16 @@ export default function ShopifyConsentLogPage() {
           <p>A consent log is one of the most practical product surfaces in compliance software. It translates a hidden backend process into something the merchant can inspect from Shopify admin. That reduces uncertainty and makes the product more useful during reviews, client conversations, and internal operations.</p>
           <p>ProtectKaro gives stores a clear path here. Free includes recent audit-log visibility so merchants can confirm the workflow is operating. Pro extends that with a longer history and CSV export for deeper reporting needs.</p>
           <p>This is why the consent log is not an “extra feature.” It is part of the core value proposition. Related pages: <Link href="/features/consent-records" className="text-link">Consent Records</Link> and <Link href="/pricing" className="text-link">Pricing</Link>.</p>
+        </div>
+      </section>
+      <section className="section" style={{ maxWidth: 860, paddingTop: 0 }}>
+        <div className="faq-list">
+          {FAQS.map(([q, a]) => (
+            <div key={q} className="faq-item">
+              <h3 className="faq-q">{q}</h3>
+              <p className="faq-a">{a}</p>
+            </div>
+          ))}
         </div>
       </section>
       <Footer />
