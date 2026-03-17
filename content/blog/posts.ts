@@ -132,6 +132,61 @@ export const blogPosts: BlogPost[] = [
       "For website SEO, this comparison topic is valuable because it meets merchants where they already are. Many search for GDPR-language terms first, then need help translating that thinking into an India-specific compliance workflow."
     ],
   },
+
+  {
+    slug: "shopify-privacy-compliance-india-guide",
+    title: "Shopify privacy compliance in India: a practical guide",
+    description:
+      "A practical guide for Shopify merchants in India who need a clearer privacy-compliance workflow with consent visibility and reviewable records.",
+    publishedAt: "2026-03-17",
+    readingTime: "6 min read",
+    category: "Guides",
+    keywords: ["Shopify privacy compliance India", "privacy compliance Shopify India", "Shopify DPDP privacy"],
+    excerpt:
+      "Privacy compliance becomes easier when the workflow is visible inside Shopify, not hidden behind assumptions.",
+    body: [
+      "For Indian Shopify merchants, privacy compliance is often treated like a one-time storefront task. Add the banner, save the theme, and move on. But real operational confidence comes later: can the merchant verify that the setup is still active, and can they inspect the records that support it?",
+      "That is why compliance workflows need product surfaces, not just code. Protection Status, consent logs, and clear retention rules give merchants a more usable and trustworthy system. They also make it easier for agencies or internal teams to review what is happening without escalating to engineering.",
+      "ProtectKaro is useful here because it turns an abstract compliance promise into a visible workflow. Free gets stores live with recent audit-log visibility. Pro adds longer retention and CSV export when reporting needs increase.",
+      "If your website, product, and documentation all tell this same story, you create a stronger trust signal than generic banner-first competitors."
+    ],
+  },
+  {
+    slug: "how-agencies-can-manage-dpdp-for-shopify-clients",
+    title: "How agencies can manage DPDP for Shopify clients",
+    description:
+      "A practical article for agencies that need a repeatable DPDP workflow across Shopify client stores with clearer proof and handoff quality.",
+    publishedAt: "2026-03-17",
+    readingTime: "6 min read",
+    category: "Agency",
+    keywords: ["DPDP for Shopify clients", "agency DPDP Shopify", "Shopify compliance agencies"],
+    excerpt:
+      "Agencies need more than install speed. They need a workflow that is easy to hand off and easy for clients to trust.",
+    body: [
+      "When an agency installs a compliance tool on a client store, the real challenge comes after setup. The client needs to understand what was installed, how to verify it, and what proof exists if they ask for a review later. Banner-only tools leave too much ambiguity in that handoff.",
+      "A better agency workflow has four stages: install the app, confirm Protection Status, review the consent log with the client, and define when the client should upgrade to deeper proof features such as longer retention or CSV export. That creates a clearer commercial and operational story.",
+      "ProtectKaro is well suited to this because the workflow lives inside Shopify admin. Clients do not need to learn a disconnected system. Agencies can also position the Free-to-Pro path as a sensible maturity model instead of a forced upsell.",
+      "This matters for agency demos and retention. The stronger the workflow is after implementation, the easier it is to justify your work and keep the client confident."
+    ],
+  },
+  {
+    slug: "consent-log-vs-cookie-banner-whats-the-difference",
+    title: "Consent log vs cookie banner: what is the difference?",
+    description:
+      "Understand the difference between a visible consent banner and the consent log that makes the workflow much more defensible later.",
+    publishedAt: "2026-03-17",
+    readingTime: "5 min read",
+    category: "Comparisons",
+    keywords: ["consent log vs cookie banner", "cookie banner consent log", "audit-ready consent proof"],
+    excerpt:
+      "A cookie banner is what visitors see. A consent log is what gives the merchant something to review later.",
+    body: [
+      "The easiest way to understand the difference is this: the banner is the interaction surface, while the consent log is the evidence surface. One helps collect a choice; the other helps the merchant understand what was captured and whether the workflow is doing what it should.",
+      "That distinction matters because many merchants buy banner tools thinking they have bought compliance infrastructure. In reality, they may only have bought a front-end widget. The defensible part is the record underneath.",
+      "ProtectKaro's positioning benefits from making this explicit. The banner is necessary, but the consent log is where operational trust begins. That is a much stronger message for merchants, agencies, and search traffic alike.",
+      "The more clearly your site explains this difference, the easier it becomes to stand out from tools that are still selling appearance over proof."
+    ],
+  },
 ];
 
 export function getAllPosts() {
