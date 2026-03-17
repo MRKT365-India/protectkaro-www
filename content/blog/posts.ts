@@ -78,6 +78,60 @@ export const blogPosts: BlogPost[] = [
       "If we own that narrative consistently across pages, blog content, and product screens, we will attract better-fit merchants and agencies than a generic consent-banner pitch ever will."
     ],
   },
+  {
+    slug: "best-dpdp-compliance-app-for-shopify-in-india",
+    title: "Best DPDP compliance app for Shopify in India: what to look for",
+    description:
+      "A buyer's guide for Shopify merchants evaluating DPDP compliance apps in India, with a focus on proof strength, retention, and audit readiness.",
+    publishedAt: "2026-03-17",
+    readingTime: "6 min read",
+    category: "Commercial Intent",
+    keywords: ["best DPDP compliance app Shopify", "DPDP app Shopify India", "Shopify compliance app India"],
+    excerpt:
+      "If you are choosing a DPDP app for Shopify, do not compare only banner design. Compare how well each app helps you prove what happened later.",
+    body: [
+      "Merchants often evaluate compliance apps the wrong way. They compare banner layouts, colors, and installation flow, but ignore the quality of the record system behind the banner. That is a problem, because the business risk usually appears after implementation, not during the demo.",
+      "A stronger evaluation framework asks five questions. First, can the merchant verify the banner is truly live? Second, can they inspect recent consent records? Third, how long is history retained on each plan? Fourth, can they export records when needed? Fifth, does the app fit naturally into Shopify admin instead of creating another disconnected workflow?",
+      "ProtectKaro is designed around those questions. It starts with a fast Shopify-native setup, then gives the merchant Protection Status visibility and audit log access. Free gets the workflow live. Pro deepens proof with longer retention and CSV export.",
+      "For Indian merchants, the best app is the one that lowers operational ambiguity. It should make the compliance workflow easy to enable, easy to verify, and easy to explain later. That is the standard buyers should use."
+    ],
+  },
+  {
+    slug: "how-to-create-audit-ready-consent-records-in-shopify",
+    title: "How to create audit-ready consent records in Shopify",
+    description:
+      "A practical guide for merchants who want stronger consent proof in Shopify, from banner activation to audit-log review and export readiness.",
+    publishedAt: "2026-03-17",
+    readingTime: "6 min read",
+    category: "Guides",
+    keywords: ["audit-ready consent records Shopify", "Shopify consent log", "consent records DPDP"],
+    excerpt:
+      "Audit-ready consent records come from an operational system, not from a banner screenshot. Here is the workflow merchants should follow.",
+    body: [
+      "The first requirement is collection. The banner must actually be present on the store and must present the consent choice before optional data processing begins. But collection alone is not enough. The merchant must also be able to confirm that the setup is active from inside the app.",
+      "The second requirement is visibility. Merchants need a consent log they can open and review. If they cannot see recent records, they cannot confidently explain the system to an agency partner, reviewer, or client. That is why a consent log should be treated as a product surface, not an internal implementation detail.",
+      "The third requirement is retention. Many stores are fine starting with a recent-history window. But as a business matures, longer history and exportability become important. A serious compliance workflow should therefore have a clear path from starter visibility to deeper audit proof.",
+      "ProtectKaro fits this progression well: activate the workflow, confirm Protection Status, review recent records, and upgrade when longer retention and CSV exports become necessary. That path is simple, merchant-friendly, and commercially clear."
+    ],
+  },
+  {
+    slug: "dpdp-vs-gdpr-for-indian-shopify-merchants",
+    title: "DPDP vs GDPR for Indian Shopify merchants",
+    description:
+      "A straightforward comparison of DPDP and GDPR for Indian ecommerce teams using Shopify, with a focus on where operational consent proof overlaps.",
+    publishedAt: "2026-03-17",
+    readingTime: "7 min read",
+    category: "Comparisons",
+    keywords: ["DPDP vs GDPR", "Shopify GDPR DPDP", "privacy compliance India ecommerce"],
+    excerpt:
+      "DPDP and GDPR are not identical, but merchants often need the same operational discipline: clear consent capture and a record they can review later.",
+    body: [
+      "Merchants often frame DPDP and GDPR as two separate compliance worlds. In practice, many operational habits overlap. A store still needs a clear consent interaction, a defensible record, and an internal way to confirm the workflow is functioning correctly.",
+      "The biggest mistake is assuming that because a store has a banner, it has solved both problems. Regulations differ, but a weak record system is weak under any framework. Proof quality still matters. Merchants should therefore focus on the implementation habits that create confidence across regimes: consistent capture, retained records, and internal visibility.",
+      "This is why ProtectKaro's model is useful even when merchants think beyond DPDP. It is not trying to replace legal advice. It is trying to make the consent operation itself easier to monitor and easier to prove. That is a durable product position whether a merchant is primarily thinking about India, global customers, or both.",
+      "For website SEO, this comparison topic is valuable because it meets merchants where they already are. Many search for GDPR-language terms first, then need help translating that thinking into an India-specific compliance workflow."
+    ],
+  },
 ];
 
 export function getAllPosts() {

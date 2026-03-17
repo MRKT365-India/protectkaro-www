@@ -1,16 +1,28 @@
 import type { Metadata } from "next";
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
+import { JsonLd } from "../components/JsonLd";
 import { pricingPlans } from "../../lib/site";
+import { faqSchema, softwareSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Pricing",
   description: "ProtectKaro pricing for Shopify merchants: Free includes 90-day consent logs, and Pro adds 1-year history plus CSV export.",
 };
 
+
+const PRICING_FAQS = [
+  { question: "What is included in Free?", answer: "Free includes the consent banner, event logging, Protection Status visibility, and a 90-day audit log window inside the app." },
+  { question: "What changes on Pro?", answer: "Pro adds a full 1-year audit log, CSV export, and deeper proof workflows for stores and agencies." },
+  { question: "Is billing handled by Shopify?", answer: "Yes. Billing runs through Shopify and appears on the merchant's normal Shopify invoice." },
+  { question: "Can I start free and upgrade later?", answer: "Yes. Start on Free, get the workflow live, then upgrade when you need longer retention and exports." },
+];
+
 export default function Pricing() {
   return (
     <>
+      <JsonLd data={softwareSchema()} />
+      <JsonLd data={faqSchema(PRICING_FAQS)} />
       <Nav />
 
       <section className="page-hero">
@@ -52,12 +64,7 @@ export default function Pricing() {
 
       <section className="section" style={{ paddingTop: 20 }}>
         <div className="faq-list">
-          {[
-            ["What is included in Free?", "Free includes the consent banner, event logging, Protection Status visibility, and a 90-day audit log window inside the app."],
-            ["What changes on Pro?", "Pro adds a full 1-year audit log, CSV export, and deeper proof workflows for stores and agencies."],
-            ["Is billing handled by Shopify?", "Yes. Billing runs through Shopify and appears on the merchant's normal Shopify invoice."],
-            ["Can I start free and upgrade later?", "Yes. Start on Free, get the workflow live, then upgrade when you need longer retention and exports."],
-          ].map(([q, a]) => (
+          {PRICING_FAQS.map(({ question: q, answer: a }) => (
             <div key={q} className="faq-item">
               <h3 className="faq-q">{q}</h3>
               <p className="faq-a">{a}</p>

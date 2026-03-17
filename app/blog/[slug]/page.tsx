@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Nav } from "../../components/Nav";
 import { Footer } from "../../components/Footer";
+import { JsonLd } from "../../components/JsonLd";
 import { getAllPosts, getPostBySlug } from "../../../content/blog/posts";
+import { articleSchema, faqSchema } from "../../../lib/schema";
 
 export async function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }));
@@ -27,6 +29,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
   return (
     <>
+      <JsonLd data={articleSchema({ title: post.title, description: post.description, publishedAt: post.publishedAt, url: `https://www.protectkaro.com/blog/${post.slug}` })} />
+      {post.faq?.length ? <JsonLd data={faqSchema(post.faq)} /> : null}
       <Nav />
       <article className="article-shell">
         <div className="article-meta">

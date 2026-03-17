@@ -4,6 +4,8 @@ import Link from "next/link";
 import { Nav } from "./components/Nav";
 import { Footer } from "./components/Footer";
 import { InstallForm } from "./components/InstallForm";
+import { JsonLd } from "./components/JsonLd";
+import { organizationSchema, softwareSchema } from "../lib/schema";
 
 export const metadata: Metadata = {
   title: "Audit-Ready DPDP Compliance for Shopify",
@@ -72,6 +74,8 @@ const FAQS = [
 export default function Home() {
   return (
     <>
+      <JsonLd data={organizationSchema()} />
+      <JsonLd data={softwareSchema()} />
       <Nav />
 
       <section className="hero">
