@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
 import { JsonLd } from "../components/JsonLd";
@@ -9,7 +10,6 @@ export const metadata: Metadata = {
   title: "Pricing",
   description: "ProtectKaro pricing for Shopify merchants: Free includes 90-day consent logs, and Pro adds 1-year history plus CSV export.",
 };
-
 
 const PRICING_FAQS = [
   { question: "What is included in Free?", answer: "Free includes the consent banner, event logging, Protection Status visibility, and a 90-day audit log window inside the app." },
@@ -60,6 +60,20 @@ export default function Pricing() {
             </ul>
           </div>
         ))}
+      </section>
+
+      <section className="section proof-section" style={{ maxWidth: 980, paddingTop: 10 }}>
+        <div className="proof-copy">
+          <div className="page-badge">In-app pricing proof</div>
+          <h2 className="section-title left">Show merchants the same pricing story in the product</h2>
+          <p className="proof-text">This screenshot reinforces that the website is aligned with the actual in-app billing flow. That reduces friction during review and makes the upgrade path feel credible.</p>
+          <p className="proof-text">Free gets merchants live. Pro is where longer history, CSV export, and stronger proof workflows become available.</p>
+        </div>
+        <div className="proof-panel">
+          <div className="proof-image-card">
+            <Image src="/images/product/plan-billing.jpg" alt="ProtectKaro plan and billing screen in Shopify admin" width={1200} height={900} className="proof-image" />
+          </div>
+        </div>
       </section>
 
       <section className="section" style={{ paddingTop: 20 }}>

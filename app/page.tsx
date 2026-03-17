@@ -118,23 +118,14 @@ export default function Home() {
           </ul>
         </div>
         <div className="proof-panel">
-          <div className="proof-mock">
-            <div className="proof-pill success">Protection Status: Connected</div>
-            <div className="proof-metric">
-              <span>Total consent events</span>
-              <strong>1,284</strong>
-            </div>
-            <div className="proof-metric">
-              <span>Plan</span>
-              <strong>Free / Pro</strong>
-            </div>
-            <div className="proof-metric">
-              <span>Audit log visibility</span>
-              <strong>90 days / 1 year</strong>
-            </div>
-          </div>
-          <div className="screenshot-note">
-            <strong>Screenshot slot:</strong> Replace this mock with a real dashboard screenshot showing Protection Status, consent metrics, and audit-log proof.
+          <div className="proof-image-card">
+            <Image
+              src="/images/product/dashboard.jpg"
+              alt="ProtectKaro dashboard showing Protection Status and consent metrics inside Shopify admin"
+              width={1200}
+              height={900}
+              className="proof-image"
+            />
           </div>
         </div>
       </section>
@@ -143,21 +134,24 @@ export default function Home() {
         <div className="content-strip-header">
           <div>
             <div className="page-badge">Product proof</div>
-            <h2 className="section-title left">Where real app screenshots should go next</h2>
+            <h2 className="section-title left">See the workflow in the product</h2>
           </div>
         </div>
-        <div className="mini-grid">
-          <div className="mini-card">
-            <strong>Homepage proof shot</strong>
-            <span>Use the dashboard screenshot that best shows Protection Status, total events, and the audit-log surface.</span>
+        <div className="mini-grid proof-gallery-grid">
+          <div className="mini-card proof-gallery-card">
+            <Image src="/images/product/consent-audit-log.jpg" alt="ProtectKaro consent audit log inside Shopify admin" width={1200} height={900} className="proof-gallery-image" />
+            <strong>Consent Audit Log</strong>
+            <span>Show merchants the record layer they can actually review inside Shopify admin.</span>
           </div>
-          <div className="mini-card">
-            <strong>Consent Records page</strong>
-            <span>Show the audit-log table or records view so merchants understand the proof layer immediately.</span>
+          <div className="mini-card proof-gallery-card">
+            <Image src="/images/product/plan-billing.jpg" alt="ProtectKaro plan and billing page showing Free and Pro plans" width={1200} height={900} className="proof-gallery-image" />
+            <strong>Plan & Billing</strong>
+            <span>Reinforce the Free-to-Pro progression with the real in-app billing experience.</span>
           </div>
-          <div className="mini-card">
-            <strong>Pricing support shot</strong>
-            <span>Use one screenshot to reinforce why longer history and CSV export matter for Pro buyers and agencies.</span>
+          <div className="mini-card proof-gallery-card">
+            <Image src="/images/product/storefront-banner.jpg" alt="ProtectKaro storefront consent banner on a Shopify store" width={1200} height={900} className="proof-gallery-image" />
+            <strong>Storefront banner</strong>
+            <span>Make the collection layer visible while keeping the message focused on the proof behind it.</span>
           </div>
         </div>
       </section>
