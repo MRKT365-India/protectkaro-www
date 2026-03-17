@@ -13,6 +13,7 @@ export function Nav() {
           <Link href="/features">Features</Link>
           <Link href="/pricing">Pricing</Link>
           <Link href="/shopify-dpdp-compliance">DPDP for Shopify</Link>
+          <Link href="/for-agencies">For Agencies</Link>
           <Link href="/blog">Blog</Link>
           <Link href="/how-it-works">How it works</Link>
           <a href="https://apps.shopify.com/protectkaro" className="nav-cta" rel="noopener noreferrer">

@@ -112,9 +112,9 @@ export default function Home() {
             ProtectKaro is built for merchants who need more than a nice-looking banner. The real asset is an operational record: what was captured, when it was captured, and whether the banner is actually live on the store.
           </p>
           <ul className="proof-list">
-            <li>Protection Status shows whether setup is actually complete</li>
-            <li>Consent Audit Log gives merchants a reviewable record trail</li>
-            <li>Pro unlocks deeper history and CSV export for agency/audit workflows</li>
+            <li><Link href="/features/protection-status" className="text-link">Protection Status</Link> shows whether setup is actually complete</li>
+            <li><Link href="/features/consent-records" className="text-link">Consent Records</Link> give merchants a reviewable record trail</li>
+            <li><Link href="/pricing" className="text-link">Pro</Link> unlocks deeper history and CSV export for agency/audit workflows</li>
           </ul>
         </div>
         <div className="proof-panel">
@@ -132,6 +132,32 @@ export default function Home() {
               <span>Audit log visibility</span>
               <strong>90 days / 1 year</strong>
             </div>
+          </div>
+          <div className="screenshot-note">
+            <strong>Screenshot slot:</strong> Replace this mock with a real dashboard screenshot showing Protection Status, consent metrics, and audit-log proof.
+          </div>
+        </div>
+      </section>
+
+      <section className="section screenshot-section">
+        <div className="content-strip-header">
+          <div>
+            <div className="page-badge">Product proof</div>
+            <h2 className="section-title left">Where real app screenshots should go next</h2>
+          </div>
+        </div>
+        <div className="mini-grid">
+          <div className="mini-card">
+            <strong>Homepage proof shot</strong>
+            <span>Use the dashboard screenshot that best shows Protection Status, total events, and the audit-log surface.</span>
+          </div>
+          <div className="mini-card">
+            <strong>Consent Records page</strong>
+            <span>Show the audit-log table or records view so merchants understand the proof layer immediately.</span>
+          </div>
+          <div className="mini-card">
+            <strong>Pricing support shot</strong>
+            <span>Use one screenshot to reinforce why longer history and CSV export matter for Pro buyers and agencies.</span>
           </div>
         </div>
       </section>
@@ -167,6 +193,29 @@ export default function Home() {
       <section className="section content-strip">
         <div className="content-strip-header">
           <div>
+            <div className="page-badge">Commercial paths</div>
+            <h2 className="section-title left">Explore the buyer journeys</h2>
+          </div>
+        </div>
+        <div className="mini-grid">
+          <Link href="/shopify-dpdp-compliance" className="mini-card">
+            <strong>DPDP for Shopify</strong>
+            <span>Core commercial page for merchants looking for a DPDP solution.</span>
+          </Link>
+          <Link href="/dpdp-audit-readiness" className="mini-card">
+            <strong>DPDP audit readiness</strong>
+            <span>Explain the difference between setup and proof strength.</span>
+          </Link>
+          <Link href="/for-agencies" className="mini-card">
+            <strong>For agencies</strong>
+            <span>Show why ProtectKaro works for client stores and repeatable handoffs.</span>
+          </Link>
+        </div>
+      </section>
+
+      <section className="section content-strip">
+        <div className="content-strip-header">
+          <div>
             <div className="page-badge">DPDP content engine</div>
             <h2 className="section-title left">Learn the operational side of DPDP</h2>
           </div>
@@ -181,9 +230,9 @@ export default function Home() {
             <strong>DPDP compliance checklist for Shopify merchants</strong>
             <span>Use a practical checklist instead of vague compliance claims.</span>
           </Link>
-          <Link href="/blog/why-cookie-banners-are-not-enough-for-dpdp" className="mini-card">
-            <strong>Why cookie banners are not enough for DPDP</strong>
-            <span>See why proof strength matters more than banner cosmetics.</span>
+          <Link href="/blog/best-dpdp-compliance-app-for-shopify-in-india" className="mini-card">
+            <strong>Best DPDP compliance app for Shopify in India</strong>
+            <span>See the evaluation criteria buyers should actually use.</span>
           </Link>
         </div>
       </section>
