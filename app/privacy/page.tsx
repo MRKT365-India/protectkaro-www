@@ -14,7 +14,7 @@ export default function Privacy() {
         <h1 style={{ fontSize: 36, fontWeight: 800, marginBottom: 8 }}>Privacy Policy</h1>
         <p style={{ color: "#64748b", marginBottom: 40 }}>Last updated: March 8, 2026</p>
         <h2 style={S.h2}>1. Who We Are</h2>
-        <p style={S.p}>ProtectKaro is a Shopify app developed by MRKT365 R&D India Pvt Ltd. We help Shopify merchants comply with India's Digital Personal Data Protection Act, 2023.</p>
+        <p style={S.p}>ProtectKaro is a Shopify app developed by MRKT365 R&D India Pvt Ltd. We help Shopify merchants comply with India&apos;s Digital Personal Data Protection Act, 2023.</p>
         <h2 style={S.h2}>2. What Data We Collect</h2>
         <p style={S.p}>When a customer interacts with the consent banner, we collect: anonymous visitor ID, consent action, SHA-256 hashed IP address, SHA-256 hashed user agent, and timestamp. We do <strong>not</strong> collect names, emails, phone numbers, or any Shopify customer records.</p>
         <h2 style={S.h2}>3. Data Retention</h2>

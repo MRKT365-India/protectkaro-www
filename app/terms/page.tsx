@@ -16,7 +16,7 @@ export default function Terms() {
         <h2 style={S.h2}>1. Acceptance</h2>
         <p style={S.p}>By installing ProtectKaro from the Shopify App Store, you agree to these terms.</p>
         <h2 style={S.h2}>2. Service</h2>
-        <p style={S.p}>ProtectKaro provides a DPDP consent collection and audit logging service for Shopify merchants. The service is provided "as is" and free of charge.</p>
+        <p style={S.p}>ProtectKaro provides a DPDP consent collection and audit logging service for Shopify merchants. The service is provided &quot;as is&quot; and free of charge.</p>
         <h2 style={S.h2}>3. Merchant Responsibilities</h2>
         <p style={S.p}>Merchants are responsible for configuring the consent banner correctly and for their own compliance with applicable data protection laws.</p>
         <h2 style={S.h2}>4. Limitation of Liability</h2>

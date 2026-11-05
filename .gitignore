@@ -6,3 +6,9 @@ out/
 .env*.local
 *.log
 .DS_Store
+.open-next/
+.wrangler/
+.dev.vars
+.dev.vars.*
+cloudflare-env.d.ts
+tsconfig.tsbuildinfo

@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // No output: "export" — Cloudflare Workers via OpenNext needs standalone output
+  // OpenNext bundles this server output into the existing Cloudflare Worker.
+  output: "standalone",
   images: {
     unoptimized: true,
   },
