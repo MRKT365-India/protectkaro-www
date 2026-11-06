@@ -1,0 +1,54 @@
+name: Website quality
+
+on:
+  push:
+    branches: [main]
+    paths: &quality_paths
+      - '.github/**'
+      - 'app/**'
+      - 'lib/**'
+      - 'content/**'
+      - 'public/**'
+      - 'tests/**'
+      - 'package*.json'
+      - '*config.*'
+      - 'tsconfig*.json'
+      - 'next-env.d.ts'
+      - 'wrangler.jsonc'
+      - 'vercel.json'
+  pull_request:
+    branches: [main]
+    paths: *quality_paths
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      CI: 'true'
+      NEXT_TELEMETRY_DISABLED: '1'
+      WRANGLER_SEND_METRICS: 'false'
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24.22.2'
+          cache: npm
+      - run: npm ci --no-fund --no-audit
+      - run: npm run lint
+      - name: Build Next.js and the Cloudflare Worker locally
+        run: npm run build:worker
+      - run: ./node_modules/.bin/tsc --noEmit
+      # The existing tests start and stop their own localhost Next.js server.
+      - run: node --test tests/public-contract.test.mjs
+      - run: npm audit --audit-level=low
