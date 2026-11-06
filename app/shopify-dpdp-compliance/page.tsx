@@ -42,7 +42,7 @@ export default function ShopifyDpdpCompliance() {
         <div className="article-body">
           <p>For most Shopify merchants, the operational challenge is not installing a compliance app. It is maintaining a workflow that is easy to verify and easy to explain later. ProtectKaro is built to keep that workflow inside Shopify rather than spreading it across ad hoc tools and assumptions.</p>
           <p>The strongest setup starts with three things: live consent capture on the storefront, Protection Status visibility in the app, and a reviewable consent log. That combination gives merchants a more credible answer when asked how consent is being handled.</p>
-          <p>Free gets the workflow live with recent audit-log visibility. Pro unlocks deeper proof with longer retention and CSV export. That makes the upgrade story operational, not cosmetic.</p>
+          <p>Free gets the workflow live with recent audit-log visibility. Pro unlocks deeper proof with longer data-access windows and CSV export. That makes the upgrade story operational, not cosmetic.</p>
         </div>
         <div className="faq-list" style={{ marginTop: 40 }}>
           {FAQS.map((faq) => (

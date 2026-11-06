@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const rows = [
   ["Goal", "Get the workflow live", "Support deeper audit/reporting needs"],
-  ["Audit log window", "90 days", "1 year"],
+  ["Data-access window", "90 days", "365 days"],
   ["CSV export", "Not included", "Included"],
   ["Best for", "New stores / initial setup", "Agencies / mature stores / reporting needs"],
 ];
@@ -23,7 +23,7 @@ export default function FreeVsProConsentProofPage() {
         <div className="page-hero-inner">
           <div className="page-badge">Comparison</div>
           <h1 className="page-title">Free vs Pro: what changes in consent proof?</h1>
-          <p className="page-subtitle">Free gets merchants live quickly. Pro is for teams that need longer retention, exportability, and stronger operational proof.</p>
+          <p className="page-subtitle">Free gets merchants live quickly. Pro is for teams that need longer data-access windows, exportability, and stronger operational proof.</p>
         </div>
       </section>
       <section className="section" style={{ maxWidth: 960 }}>

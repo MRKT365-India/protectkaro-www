@@ -8,14 +8,14 @@ import { faqSchema, softwareSchema } from "../../lib/schema";
 
 export const metadata: Metadata = {
   title: "Pricing",
-  description: "ProtectKaro pricing for Shopify merchants: Free includes 90-day consent logs, and Pro adds 1-year history plus CSV export.",
+  description: "ProtectKaro pricing: Free provides a 90-day data-access window; Pro provides 365 days and CSV export.",
 };
 
 const PRICING_FAQS = [
-  { question: "What is included in Free?", answer: "Free includes the consent banner, event logging, Protection Status visibility, and a 90-day audit log window inside the app." },
-  { question: "What changes on Pro?", answer: "Pro adds a full 1-year audit log, CSV export, and deeper proof workflows for stores and agencies." },
+  { question: "What is included in Free?", answer: "Free includes the privacy-choice banner, consent recording, detected theme status, and a 90-day data-access window." },
+  { question: "What changes on Pro?", answer: "Pro provides a 365-day data-access window and CSV export for stores and agencies." },
   { question: "Is billing handled by Shopify?", answer: "Yes. Billing runs through Shopify and appears on the merchant's normal Shopify invoice." },
-  { question: "Can I start free and upgrade later?", answer: "Yes. Start on Free, get the workflow live, then upgrade when you need longer retention and exports." },
+  { question: "Can I start free and upgrade later?", answer: "Yes. Start on Free, get the workflow live, then upgrade when you need longer data-access windows and exports." },
 ];
 
 export default function Pricing() {

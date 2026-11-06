@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 const STEPS = [
   { n: 1, title: "Install ProtectKaro from Shopify", desc: "The merchant starts from the Shopify App Store and lands in ProtectKaro inside Shopify admin." },
   { n: 2, title: "Enable the App Embed", desc: "The merchant opens Theme Editor, turns on the ProtectKaro banner, and saves the change." },
-  { n: 3, title: "Confirm Protection Status", desc: "The app dashboard checks whether the banner appears connected so setup can be verified quickly." },
-  { n: 4, title: "Collect consent decisions", desc: "Visitors make consent choices on the storefront and those actions are captured by the compliance workflow." },
+  { n: 3, title: "Review theme status", desc: "The dashboard checks the active theme configuration. Test a storefront choice separately to verify consent behavior and record delivery." },
+  { n: 4, title: "Apply and record consent decisions", desc: "Visitor choices are applied through Shopify. Successfully delivered consent records appear in the app; the banner reports pending delivery and offers retries." },
   { n: 5, title: "Review records in the app", desc: "Merchants can inspect recent consent records from the Consent Audit Log inside Shopify admin." },
-  { n: 6, title: "Upgrade for deeper proof", desc: "When longer retention or CSV exports are needed, the merchant upgrades to Pro through Shopify billing." },
+  { n: 6, title: "Upgrade for deeper proof", desc: "When longer data-access windows or CSV exports are needed, the merchant upgrades to Pro through Shopify billing." },
 ];
 
 export default function HowItWorks() {

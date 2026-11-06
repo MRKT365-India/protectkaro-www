@@ -5,7 +5,7 @@ import { siteConfig } from "../lib/site";
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "ProtectKaro — Audit-Ready DPDP Compliance for Shopify",
+    default: "ProtectKaro — Privacy Choices and Consent Records for Shopify",
     template: "%s | ProtectKaro",
   },
   description: siteConfig.description,
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: siteConfig.url,
-    title: "ProtectKaro — Audit-Ready DPDP Compliance for Shopify",
+    title: "ProtectKaro — Privacy Choices and Consent Records for Shopify",
     description: siteConfig.description,
     siteName: siteConfig.name,
     images: [{ url: siteConfig.ogImage }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ProtectKaro — Audit-Ready DPDP Compliance for Shopify",
+    title: "ProtectKaro — Privacy Choices and Consent Records for Shopify",
     description: siteConfig.description,
     images: [siteConfig.ogImage],
   },

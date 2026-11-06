@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "ProtectKaro",
   description:
-    "Audit-ready DPDP compliance infrastructure for Shopify stores in India. Capture consent, prove records, and stay ready for reviews and audits.",
+    "Shopify privacy choices and consent records for stores in India. Apply visitor choices through Shopify and review recorded activity in your app.",
   url: "https://www.protectkaro.com",
   ogImage: "/logo.jpg",
   companyName: "MRKT365 R&D India Pvt Ltd",
@@ -20,8 +20,8 @@ export const pricingPlans = [
       "DPDP consent banner",
       "Consent event logging",
       "Protection Status in Shopify admin",
-      "90-day consent audit log history",
-      "GDPR/DPDP webhook coverage",
+      "90-day data-access window",
+      "Shopify privacy-request handling",
       "Live dashboard analytics",
       "Community support",
     ],
@@ -37,9 +37,8 @@ export const pricingPlans = [
     recommended: true,
     features: [
       "Everything in Free",
-      "Full audit log (1-year history)",
+      "365-day data-access window",
       "CSV audit log export",
-      "Custom branded banner",
       "Priority support",
     ],
   },

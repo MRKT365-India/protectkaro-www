@@ -22,7 +22,7 @@ export default function ShopifyPrivacyComplianceIndiaPage() {
       <section className="section" style={{ maxWidth: 880 }}>
         <div className="article-body">
           <p>Privacy compliance in Shopify is usually treated as a front-end problem. Merchants install a banner and assume the job is finished. But operationally, the harder question is whether the merchant can verify the workflow and review records later.</p>
-          <p>That is where ProtectKaro is stronger than banner-only positioning. It keeps the workflow visible in Shopify admin and gives merchants a clear path from initial setup to deeper proof. Free gets the workflow live. Pro supports stronger retention and export needs.</p>
+          <p>That is where ProtectKaro is stronger than banner-only positioning. It keeps the workflow visible in Shopify admin and gives merchants a clear path from initial setup to deeper proof. Free gets the workflow live. Pro supports longer record-access windows and export needs.</p>
           <p>Useful next pages: <Link href="/shopify-dpdp-compliance" className="text-link">DPDP for Shopify</Link>, <Link href="/shopify-consent-log" className="text-link">Shopify consent log</Link>, and <Link href="/pricing" className="text-link">Pricing</Link>.</p>
         </div>
       </section>

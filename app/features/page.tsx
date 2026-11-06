@@ -11,14 +11,14 @@ const FEATURES = [
   {
     icon: "🛡️",
     title: "Protection Status",
-    desc: "See whether the banner is actually enabled and connected from the Shopify admin dashboard.",
-    detail: "Reduces the risk of merchants assuming setup is complete when it is not.",
+    desc: "Review the app's detected theme embed status in Shopify admin.",
+    detail: "Test a storefront choice separately to verify consent behavior and record delivery.",
   },
   {
     icon: "🧾",
     title: "Consent Audit Log",
     desc: "Review consent activity inside the app instead of relying on storefront screenshots or assumptions.",
-    detail: "Free includes 90-day history; Pro unlocks 1-year history and exports.",
+    detail: "Free provides a 90-day data-access window; Pro provides 365 days and CSV export.",
   },
   {
     icon: "📤",
@@ -28,7 +28,7 @@ const FEATURES = [
   },
   {
     icon: "⚡",
-    title: "5-minute setup",
+    title: "Theme Editor setup",
     desc: "Install, enable the App Embed, and confirm Protection Status — all from a Shopify-native workflow.",
     detail: "No theme code changes required.",
   },
@@ -41,8 +41,8 @@ const FEATURES = [
   {
     icon: "🔔",
     title: "Shopify compliance webhooks",
-    desc: "Supports the operational side of privacy compliance with the expected webhook coverage for Shopify apps.",
-    detail: "Helps keep the implementation review-ready.",
+    desc: "Receives Shopify privacy requests and verified store-uninstall notifications.",
+    detail: "Request handling supports merchant operations; it does not certify legal compliance.",
   },
 ];
 
@@ -73,7 +73,7 @@ export default function Features() {
       </div>
       <div className="cta-section">
         <h2 className="cta-title">Get the workflow live first</h2>
-        <p className="cta-sub">Start on Free, then upgrade when you need longer retention and exports.</p>
+        <p className="cta-sub">Start on Free, then upgrade when you need longer data-access windows and exports.</p>
         <a href="https://apps.shopify.com/protectkaro" className="cta-btn" rel="noopener noreferrer">Install on Shopify</a>
       </div>
       <Footer />

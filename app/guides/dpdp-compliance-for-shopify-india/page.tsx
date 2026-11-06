@@ -29,7 +29,7 @@ export default function DpdpComplianceGuidePage() {
         <div className="article-body">
           <p>For Shopify merchants in India, DPDP compliance should be treated as an operational workflow, not just a storefront feature. The first goal is not cosmetic banner design. It is getting a consent workflow live, confirming it works, and ensuring the merchant can review records later.</p>
           <p>The strongest setup includes four layers: visible consent collection, Protection Status visibility in the app, reviewable consent records, and a clear path to deeper proof when reporting needs grow. That is what makes the workflow easier to trust internally and easier to explain externally.</p>
-          <p>ProtectKaro is built around those layers. Free gets the setup live quickly. Pro helps stores and agencies when retention depth and exports become more important. This makes the upgrade path operational rather than artificial.</p>
+          <p>ProtectKaro is built around those layers. Free gets the setup live quickly. Pro helps stores and agencies when longer record-access windows and exports become more important. This makes the upgrade path operational rather than artificial.</p>
           <p>Related pages: <Link href="/shopify-dpdp-compliance" className="text-link">DPDP for Shopify</Link>, <Link href="/dpdp-audit-readiness" className="text-link">DPDP audit readiness</Link>, and <Link href="/compare/free-vs-pro-consent-proof" className="text-link">Free vs Pro consent proof</Link>.</p>
         </div>
         <div className="faq-list" style={{ marginTop: 40 }}>

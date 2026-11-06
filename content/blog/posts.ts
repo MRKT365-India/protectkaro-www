@@ -95,7 +95,7 @@ export const blogPosts: BlogPost[] = [
     body: [
       "Merchants often evaluate compliance apps the wrong way. They compare banner layouts, colors, and installation flow, but ignore the quality of the record system behind the banner. That is a problem, because the business risk usually appears after implementation, not during the demo.",
       "A stronger evaluation framework asks five questions. First, can the merchant verify the banner is truly live? Second, can they inspect recent consent records? Third, how long is history retained on each plan? Fourth, can they export records when needed? Fifth, does the app fit naturally into Shopify admin instead of creating another disconnected workflow?",
-      "ProtectKaro is designed around those questions. It starts with a fast Shopify-native setup, then gives the merchant Protection Status visibility and audit log access. Free gets the workflow live. Pro deepens proof with longer retention and CSV export.",
+      "ProtectKaro is designed around those questions. It starts with a fast Shopify-native setup, then gives the merchant Protection Status visibility and audit log access. Free gets the workflow live. Pro provides a 365-day data-access window and CSV export.",
       "For Indian merchants, the best app is the one that lowers operational ambiguity. It should make the compliance workflow easy to enable, easy to verify, and easy to explain later. That is the standard buyers should use."
     ],
   },
@@ -114,7 +114,7 @@ export const blogPosts: BlogPost[] = [
       "The first requirement is collection. The banner must actually be present on the store and must present the consent choice before optional data processing begins. But collection alone is not enough. The merchant must also be able to confirm that the setup is active from inside the app.",
       "The second requirement is visibility. Merchants need a consent log they can open and review. If they cannot see recent records, they cannot confidently explain the system to an agency partner, reviewer, or client. That is why a consent log should be treated as a product surface, not an internal implementation detail.",
       "The third requirement is retention. Many stores are fine starting with a recent-history window. But as a business matures, longer history and exportability become important. A serious compliance workflow should therefore have a clear path from starter visibility to deeper audit proof.",
-      "ProtectKaro fits this progression well: activate the workflow, confirm Protection Status, review recent records, and upgrade when longer retention and CSV exports become necessary. That path is simple, merchant-friendly, and commercially clear."
+      "ProtectKaro fits this progression well: activate the workflow, confirm Protection Status, review recent records, and upgrade when a longer data-access window and CSV export become useful. That path is simple, merchant-friendly, and commercially clear."
     ],
   },
   {
@@ -150,7 +150,7 @@ export const blogPosts: BlogPost[] = [
     body: [
       "For Indian Shopify merchants, privacy compliance is often treated like a one-time storefront task. Add the banner, save the theme, and move on. But real operational confidence comes later: can the merchant verify that the setup is still active, and can they inspect the records that support it?",
       "That is why compliance workflows need product surfaces, not just code. Protection Status, consent logs, and clear retention rules give merchants a more usable and trustworthy system. They also make it easier for agencies or internal teams to review what is happening without escalating to engineering.",
-      "ProtectKaro is useful here because it turns an abstract compliance promise into a visible workflow. Free gets stores live with recent audit-log visibility. Pro adds longer retention and CSV export when reporting needs increase.",
+      "ProtectKaro is useful here because it turns an abstract compliance promise into a visible workflow. Free gets stores live with recent audit-log visibility. Pro provides a 365-day data-access window and CSV export when reporting needs increase.",
       "If your website, product, and documentation all tell this same story, you create a stronger trust signal than generic banner-first competitors."
     ],
   },
@@ -167,7 +167,7 @@ export const blogPosts: BlogPost[] = [
       "Agencies need more than install speed. They need a workflow that is easy to hand off and easy for clients to trust.",
     body: [
       "When an agency installs a compliance tool on a client store, the real challenge comes after setup. The client needs to understand what was installed, how to verify it, and what proof exists if they ask for a review later. Banner-only tools leave too much ambiguity in that handoff.",
-      "A better agency workflow has four stages: install the app, confirm Protection Status, review the consent log with the client, and define when the client should upgrade to deeper proof features such as longer retention or CSV export. That creates a clearer commercial and operational story.",
+      "A better agency workflow has four stages: install the app, confirm Protection Status, review the consent log with the client, and define when the client should upgrade to a longer data-access window or CSV export. That creates a clearer commercial and operational story.",
       "ProtectKaro is well suited to this because the workflow lives inside Shopify admin. Clients do not need to learn a disconnected system. Agencies can also position the Free-to-Pro path as a sensible maturity model instead of a forced upsell.",
       "This matters for agency demos and retention. The stronger the workflow is after implementation, the easier it is to justify your work and keep the client confident."
     ],

@@ -35,7 +35,8 @@ export default function Support() {
         <p style={S.p}>1) Open ProtectKaro dashboard and check Banner Connection Status.</p>
         <p style={S.p}>2) If not enabled, click “Enable Banner in Theme Editor” and turn on App Embed.</p>
         <p style={S.p}>3) Save theme changes, return to dashboard, and confirm status turns Connected.</p>
-        <p style={S.p}>4) Open Consent Audit Log and verify events are visible.</p>
+        <p style={S.p}>4) Check the regions configured in Shopify&apos;s Customer privacy settings. Automatic banner display follows those settings; visitors can also open Privacy choices on the storefront.</p>
+        <p style={S.p}>5) Test a visitor choice on the storefront, then open Consent Audit Log and confirm the record is visible. A saved Shopify choice and a successfully recorded log are separate outcomes.</p>
 
         <h2 style={S.h2}>Legal</h2>
         <p style={S.p}>

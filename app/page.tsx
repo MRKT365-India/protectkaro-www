@@ -8,21 +8,21 @@ import { JsonLd } from "./components/JsonLd";
 import { organizationSchema, softwareSchema } from "../lib/schema";
 
 export const metadata: Metadata = {
-  title: "Audit-Ready DPDP Compliance for Shopify",
+  title: "Privacy Choices and Consent Records for Shopify",
   description:
-    "ProtectKaro helps Shopify stores in India capture consent, monitor Protection Status, and keep audit-ready consent records — not just show a banner.",
+    "ProtectKaro helps Shopify stores in India apply visitor privacy choices, inspect banner status, and review consent records.",
 };
 
 const FEATURES = [
   {
     icon: "🛡️",
     title: "Protection Status inside Shopify",
-    desc: "Merchants can verify whether the banner is live and connected from the app dashboard instead of guessing from the storefront.",
+    desc: "Review the detected theme embed status in the app, then test storefront choices and record delivery separately.",
   },
   {
     icon: "🧾",
     title: "Consent records you can review",
-    desc: "Every consent action is logged with timestamps and identifiers so stores can review what happened instead of relying on screenshots.",
+    desc: "Recorded consent choices include timestamps and visitor identifiers for review. The banner reports recording failures and offers retries.",
   },
   {
     icon: "📤",
@@ -31,7 +31,7 @@ const FEATURES = [
   },
   {
     icon: "⚡",
-    title: "5-minute Shopify setup",
+    title: "Shopify Theme Editor setup",
     desc: "Install the app, enable the App Embed, and confirm status from the dashboard — no code changes required.",
   },
   {
@@ -55,11 +55,11 @@ const STEPS = [
 const FAQS = [
   {
     q: "Is ProtectKaro just a consent banner?",
-    a: "No. The banner is only the collection layer. ProtectKaro is built around consent records, Protection Status, and audit-ready proof inside Shopify.",
+    a: "The banner applies visitor choices through Shopify's Customer Privacy API. The app also shows banner status and recorded consent activity. These tools do not guarantee legal compliance.",
   },
   {
     q: "What does the Free plan include?",
-    a: "Free includes the DPDP banner, consent logging, dashboard visibility, and a 90-day audit log window. Pro adds 1-year history, CSV export, and more advanced proof features.",
+    a: "Free includes the privacy-choice banner, consent recording, detected theme status, and a 90-day data-access window. Pro provides 365 days and CSV export.",
   },
   {
     q: "Who should upgrade to Pro?",
@@ -83,14 +83,14 @@ export default function Home() {
           <Image src="/logo.jpg" alt="ProtectKaro logo" width={80} height={80} className="hero-logo" />
           <div className="hero-badge">
             <span className="hero-badge-dot" />
-            Audit-ready DPDP infrastructure for Shopify
+            Shopify privacy choices and consent records
           </div>
           <h1 className="hero-title">
             Go beyond a banner.<br />
             <span>Keep DPDP consent records ready.</span>
           </h1>
           <p className="hero-sub">
-            ProtectKaro helps Shopify stores in India capture consent, verify Protection Status, and keep review-ready consent records from one dashboard.
+            Apply visitor choices through Shopify and review recorded consent activity from one dashboard. ProtectKaro does not certify or guarantee compliance with DPDP, GDPR or other laws.
           </p>
           <InstallForm />
           <div className="hero-secondary-links">
@@ -101,7 +101,7 @@ export default function Home() {
       </section>
 
       <div className="trust-strip">
-        Shopify-first workflow · Free plan includes 90-day consent log visibility · Pro unlocks 1-year history + CSV export
+        Shopify-first workflow · Free has a 90-day data-access window · Pro provides 365 days and CSV export
       </div>
 
       <section className="section proof-section">
@@ -112,7 +112,7 @@ export default function Home() {
             ProtectKaro is built for merchants who need more than a nice-looking banner. The real asset is an operational record: what was captured, when it was captured, and whether the banner is actually live on the store.
           </p>
           <ul className="proof-list">
-            <li><Link href="/features/protection-status" className="text-link">Protection Status</Link> shows whether setup is actually complete</li>
+            <li><Link href="/features/protection-status" className="text-link">Theme status</Link> reports the detected App Embed configuration</li>
             <li><Link href="/features/consent-records" className="text-link">Consent Records</Link> give merchants a reviewable record trail</li>
             <li><Link href="/pricing" className="text-link">Pro</Link> unlocks deeper history and CSV export for agency/audit workflows</li>
           </ul>
