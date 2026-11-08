@@ -4,7 +4,7 @@ import { Footer } from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "How It Works",
-  description: "How ProtectKaro works for Shopify merchants: install, enable, confirm Protection Status, and review consent records.",
+  description: "Install ProtectKaro, enable the theme embed, test Shopify privacy choices, and review matching consent records.",
 };
 
 const STEPS = [
@@ -13,7 +13,7 @@ const STEPS = [
   { n: 3, title: "Review theme status", desc: "The dashboard checks the active theme configuration. Test a storefront choice separately to verify consent behavior and record delivery." },
   { n: 4, title: "Apply and record consent decisions", desc: "Visitor choices are applied through Shopify. Successfully delivered consent records appear in the app; the banner reports pending delivery and offers retries." },
   { n: 5, title: "Review records in the app", desc: "Merchants can inspect recent consent records from the Consent Audit Log inside Shopify admin." },
-  { n: 6, title: "Upgrade for deeper proof", desc: "When longer data-access windows or CSV exports are needed, the merchant upgrades to Pro through Shopify billing." },
+  { n: 6, title: "Upgrade for longer record access", desc: "When a 365-day data-access window or CSV export is needed, choose Pro through Shopify's hosted billing page." },
 ];
 
 export default function HowItWorks() {
@@ -23,7 +23,7 @@ export default function HowItWorks() {
       <section className="page-hero">
         <div className="page-hero-inner">
           <div className="page-badge">How it works</div>
-          <h1 className="page-title">From install to audit-ready workflow</h1>
+          <h1 className="page-title">Apply privacy choices and review the records</h1>
           <p className="page-subtitle">
             ProtectKaro is built to be easy for merchants to activate and easy to verify later.
           </p>

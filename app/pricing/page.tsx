@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import { Nav } from "../components/Nav";
 import { Footer } from "../components/Footer";
 import { JsonLd } from "../components/JsonLd";
@@ -16,6 +15,8 @@ const PRICING_FAQS = [
   { question: "What changes on Pro?", answer: "Pro provides a 365-day data-access window and CSV export for stores and agencies." },
   { question: "Is billing handled by Shopify?", answer: "Yes. Billing runs through Shopify and appears on the merchant's normal Shopify invoice." },
   { question: "Can I start free and upgrade later?", answer: "Yes. Start on Free, get the workflow live, then upgrade when you need longer data-access windows and exports." },
+  { question: "What are the Pro billing options?", answer: "Pro costs USD 12/month or USD 99/year, with a seven-day trial. Choose your billing interval on Shopify's hosted plan-selection page." },
+  { question: "Do access windows delete older records?", answer: "No. Free's 90-day and Pro's 365-day windows control which records you can access; they do not schedule automatic deletion." },
 ];
 
 export default function Pricing() {
@@ -30,7 +31,7 @@ export default function Pricing() {
           <div className="page-badge">Pricing</div>
           <h1 className="page-title">Simple pricing aligned with the app</h1>
           <p className="page-subtitle">
-            Start free for live consent capture and recent records. Upgrade when you need longer history, exports, and agency-ready proof.
+            Start free for Shopify privacy choices and recent consent records. Pro adds a longer access window and CSV export.
           </p>
         </div>
       </section>
@@ -45,6 +46,7 @@ export default function Pricing() {
                 <span className="plan-price">{plan.price}</span>
                 <span className="plan-cadence">{plan.cadence}</span>
               </div>
+              {"annualPrice" in plan ? <div className="plan-trial">Or {plan.annualPrice}</div> : null}
               {"trial" in plan && plan.trial ? <div className="plan-trial">{plan.trial}</div> : null}
               <p className="plan-desc">{plan.description}</p>
             </div>
@@ -64,15 +66,9 @@ export default function Pricing() {
 
       <section className="section proof-section" style={{ maxWidth: 980, paddingTop: 10 }}>
         <div className="proof-copy">
-          <div className="page-badge">In-app pricing proof</div>
-          <h2 className="section-title left">Show merchants the same pricing story in the product</h2>
-          <p className="proof-text">This screenshot reinforces that the website is aligned with the actual in-app billing flow. That reduces friction during review and makes the upgrade path feel credible.</p>
-          <p className="proof-text">Free gets merchants live. Pro is where longer history, CSV export, and stronger proof workflows become available.</p>
-        </div>
-        <div className="proof-panel">
-          <div className="proof-image-card">
-            <Image src="/images/product/plan-billing.jpg" alt="ProtectKaro plan and billing screen in Shopify admin" width={1200} height={900} className="proof-image" />
-          </div>
+          <h2 className="section-title left">Choose the record-access window you need</h2>
+          <p className="proof-text">Free provides access to the last 90 days of consent records. Pro provides 365 days and CSV export. Older records are not automatically deleted when an access window ends.</p>
+          <p className="proof-text">Open ProtectKaro inside Shopify admin and choose your plan through Shopify&apos;s hosted billing page. No separate ProtectKaro login is required.</p>
         </div>
       </section>
 
